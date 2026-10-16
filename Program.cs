@@ -1,0 +1,13 @@
+﻿Console.Write("Введите первую сторону: ");
+double a = double.Parse(Console.ReadLine());
+Console.Write("Введите вторую сторону: ");
+double b = double.Parse(Console.ReadLine());
+Console.Write("Введите третью сторону: ");
+double c = double.Parse(Console.ReadLine());
+Console.WriteLine($" ");
+double perimeter = a + b + c;
+Console.WriteLine($"Периметр: {perimeter}"); 
+double p = perimeter / 2;
+double d = p * (p-a)*(p-b)*(p-c);
+double S = Math.Sqrt(d);
+Console.Write($"Площадь: {S:F2}");
